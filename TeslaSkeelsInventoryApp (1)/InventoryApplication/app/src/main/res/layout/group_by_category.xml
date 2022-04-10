@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/idCategoryTable"
+        android:layout_width="358dp"
+        android:layout_height="580dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:stretchColumns="0,2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        //Very top header which shows Inventory
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="42dp"
+                android:layout_span="4"
+                android:text="Quantity By Category"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        //2nd Row which shows column headers
+
+        <TableRow android:layout_width="258dp">
+
+            <TextView
+                android:layout_width="258dp"
+                android:text="Category"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="97dp"
+                android:text="Quantity" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idBtnGoBackToGridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+</androidx.constraintlayout.widget.ConstraintLayout>

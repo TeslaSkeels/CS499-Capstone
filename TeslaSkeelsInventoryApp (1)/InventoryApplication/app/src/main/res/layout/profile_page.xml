@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/idEditConfirmNewPassword"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="60dp"
+        android:hint="Confirm New Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditNewPassword" />
+
+    <EditText
+        android:id="@+id/idEditNewPassword"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="120dp"
+        android:hint="New Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/idBtnCancel"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="64dp"
+        android:text="Cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnSavePassword" />
+
+    <Button
+        android:id="@+id/idBtnSavePassword"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="24dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditConfirmNewPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

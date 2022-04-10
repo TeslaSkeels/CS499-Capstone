@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/idBtnInventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="60dp"
+        android:text="Add Item"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCategorySelect" />
+
+    <EditText
+        android:id="@+id/idEditQuantity"
+        android:layout_width="393dp"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:hint="Enter Quantity"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditItemName" />
+
+    <EditText
+        android:id="@+id/idEditNotes"
+        android:layout_width="391dp"
+        android:layout_height="58dp"
+        android:layout_margin="10dp"
+        android:hint="Enter Notes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditQuantity" />
+
+    <EditText
+        android:id="@+id/idEditItemName"
+        android:layout_width="393dp"
+        android:layout_height="64dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Item Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/idCategorySelect"
+        android:layout_width="392dp"
+        android:layout_height="54dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditNotes"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
